@@ -61,7 +61,7 @@
     display: none;
 }
 
-.banner{
+.banner {
     width: 100%;
     height: 600px;
     animation: banner 10s infinite linear alternate;
@@ -93,43 +93,51 @@
     background:rgba(0, 0, 0,0.7);
 }
 
-.lore{
+.section-banner {
     z-index: 2;
     width: 100%;
     max-width: 550px;
     text-align: center;
 }
 
-.lore h1{
+.section-banner h1 {
     color:#fff;
     font-size: 45px;
     margin-bottom: 10px;
     letter-spacing: 2px;
 }
 
-.lore p{
+.section-banner p {
     color:#ffffff;
     line-height: 1.6;
     margin-bottom: 30px;   
 }
 
-.lore a{
+.section-banner a {
     color: #fff;
     text-decoration: none;
     background-color:#837dd1;
     padding: 16px 36px;
     display: inline-block;
     border-radius: 70px;
+    transition: 0.5s;
+}
+
+.section-banner a:hover {
+    padding: 16px 60px;
+    font-size: 24px;
 }
 
 /* MEDIAQUERIES: RESPONSIVE */
 
 @media only screen and (max-width: 760px){
+    
     .navbar {
         display:flex;
         flex-direction: column;
         padding-top:1em;
     }
+
     .menu {
         margin-top: 1em;
         display: flex;
@@ -137,6 +145,7 @@
         padding: 1em;
         transition: 0.5s;
     }
+
     /* Solo si está visible se ejecuta el evento */
     .menu:hover {
         cursor:pointer;
@@ -144,6 +153,7 @@
         border-radius: 6px;
         padding: 1.5em;
     }
+
     .menu-line {
         display:flex;
         height: 3px;
@@ -152,11 +162,13 @@
         margin-bottom: 6px;
         border-radius: 2px;
     }
+
     .nav-list .list-item {
         display: none;
         justify-content: center;
         margin-bottom: 1em;
     }
+
     .nav-list .list-item:hover {
         padding: 1.5em 1.5em;
     }
