@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     };
                 };
             });
+            /* Parche ya que mediaqueries no estaban funcionando */
             window.addEventListener('resize', function(){
                 var newWidth = window.innerWidth;
                 if (newWidth > 680) {
