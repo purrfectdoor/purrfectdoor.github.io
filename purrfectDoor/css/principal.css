@@ -1,0 +1,103 @@
+/* Añadimos fuente de texto, y otros arreglos */
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+ 
+/* Disposición flexible con flexbox */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    font-size: 0.5em;
+}
+
+.navbar {
+    background: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:1.1em;
+    padding-right:1em;
+    padding-left:1em;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-list .list-item {
+    display: inline-block;
+    padding: 1.5em 1.5em;
+    transition: 0.3s;
+}
+
+.nav-list .list-item:hover {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.nav-list .list-item:hover {
+    opacity:0.8;
+    background-color:purple;
+    border-radius: 1em;
+}
+
+.nav-list .list-item a {
+    text-decoration: none;
+    color:white;
+}
+
+.logo {
+    height: 3em;
+}
+
+.menu-line {
+    display: none;
+}
+
+
+/* MEDIAQUERIES: RESPONSIVE */
+
+@media only screen and (max-width: 680px){
+    .navbar {
+        display:flex;
+        flex-direction: column;
+        padding-top:1em;
+    }
+    .menu {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        transition: 0.5s;
+    }
+    /* Solo si está visible se ejecuta el evento */
+    .menu:hover {
+        cursor:pointer;
+        background-color:purple;
+        border-radius: 6px;
+        padding: 1.5em;
+    }
+    .menu-line {
+        display:flex;
+        height: 3px;
+        width: 20px;
+        background-color: white;
+        margin-bottom: 6px;
+        border-radius: 2px;
+    }
+    .nav-list .list-item {
+        display: none;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+    .nav-list .list-item:hover {
+        padding: 1.5em 1.5em;
+    }
+}
