@@ -24,13 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
             /* Parche ya que mediaqueries no estaban funcionando */
             window.addEventListener('resize', function(){
                 var newWidth = window.innerWidth;
-                if (newWidth > 680) {
+                if (newWidth > 760) {
                     for (i = 0; i < list.length; i++) {
                     list[i].style.display = 'inline-block';
+                    nclicks = 0;
                     }
                 } else {
                     for (i = 0; i < list.length; i++) {
                     list[i].style.display = 'none';
+                    nclicks = 0;
                     }
                 }
             });
