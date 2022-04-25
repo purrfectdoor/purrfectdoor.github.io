@@ -1,2 +1,3 @@
-# gatoArduino
- Proyecto de Introducción a la Ingeniería Informática
+# purrfectDoor
+ Proyecto de Introducción a la Ingeniería Informática.
+ 
