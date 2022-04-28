@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             /* Parche ya que mediaqueries no estaban funcionando */
             window.addEventListener('resize', function(){
                 var newWidth = window.innerWidth;
-                if (newWidth > 760) {
+                if (newWidth > 900) {
                     for (i = 0; i < list.length; i++) {
                     list[i].style.display = 'inline-block';
                     nclicks = 0;

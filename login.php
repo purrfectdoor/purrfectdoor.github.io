@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        Repositorio de Purrfect Door
+        Login de Purrfect Door
     </title>
     <!-- Conectamos archivo css local -->
     <link rel="stylesheet" href="css/principal.css">
@@ -22,7 +22,7 @@
     <div class="container">
         <nav class="navbar">
             <a class="logowtext">
-                <b>Purrfect</b><img class="logo" src="img/logo.png"></img> <b>Door</b>
+                    <b>Purrfect</b><img class="logo" src="img/logo.png"></img> <b>Door</b>
             </a>
             <div class="menu">
                 <div class="menu-line"></div>
@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li class="list-item no-responsive">
-                    <a href="login.php">
+                    <a href="#">
                         Dashboard
                     </a>
                 </li>
@@ -46,7 +46,7 @@
                     </a>
                 </li>
                 <li class="list-item no-responsive">
-                    <a href="#">
+                    <a href="repositorio.html">
                         Repositorio
                     </a>
                 </li>
@@ -57,8 +57,26 @@
                 </li>
             </ul>
         </nav>
-        <div class="main">
-            
+        <div class="form">
+            <div class="banner">
+            <div class="back-banner"></div>
+                <div class="section-banner">
+                    <form action="validar.php" method="post">
+                        <h1>
+                            Login dashboard
+                        </h1>
+                        <p>
+                            Usuario
+                        </p>
+                        <input type="text" placeholder="Ingrese su nombre" name="usuario">
+                        <p>
+                            Contraseña
+                        </p>
+                        <input type="password" placeholder="Ingrese su contraseña" name="contrasena">
+                        <input type="submit" value="Ingresar">
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </body>
